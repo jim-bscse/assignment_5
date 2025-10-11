@@ -40,6 +40,7 @@ document.getElementById('btn-add-money1')
     addHistory(addMoneyNumber, "Flood at Noakhali, Bangladesh");
 
     document.getElementById('input-add-money1').value = '';
+    document.getElementById('my_modal_6').checked = true;
 });
 
 
@@ -48,7 +49,7 @@ document.getElementById('btn-add-money')
     event.preventDefault();
 
     const addMoney = document.getElementById('input-add-money').value;
-   const addMoneyNumber = parseFloat(addMoney);
+    const addMoneyNumber = parseFloat(addMoney);
 
     if (isNaN(addMoneyNumber) || addMoneyNumber <= 0) {
         alert('Please enter a positive amount.');
@@ -68,6 +69,7 @@ document.getElementById('btn-add-money')
     addHistory(addMoneyNumber, "Aid for Injured in the Quota Movement");
 
     document.getElementById('input-add-money').value = '';
+    document.getElementById('my_modal_6').checked = true;
 });
 
 
@@ -96,6 +98,7 @@ document.getElementById('btn-add-money2')
     addHistory(addMoneyNumber2, "Flood Relief in Feni, Bangladesh");
 
     document.getElementById('input-add-money2').value = '';
+    document.getElementById('my_modal_6').checked = true;
 });
 
 // Tab switch er code
@@ -116,3 +119,4 @@ document.getElementById('history-tab').addEventListener('click', function() {
     document.getElementById('donation-tab').classList.remove('bg-[#B4F461]');
     document.getElementById('donation-tab').classList.add('bg-white', 'border', 'border-gray-300', 'text-black');
 });
+

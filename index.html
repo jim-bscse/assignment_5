@@ -40,7 +40,7 @@
         </div>
     </header>
     <main class="pt-32">
-      <!-- Tab Buttons -->
+      <!-- Tab Buttons-->
       <div class="flex flex-col md:flex-row justify-center items-center mt-8 gap-2">
         <button id="donation-tab" class="px-4 md:px-6 py-2 rounded bg-[#B4F461] text-black font-bold mr-0 md:mr-2">Donation</button>
         <button id="history-tab" class="px-4 md:px-6 py-2 rounded bg-white border border-gray-300 text-black font-bold">History</button>
@@ -64,7 +64,7 @@
                 The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
               </p>
               <input id="input-add-money1" type="text" placeholder="Write Donation Amount" class="input border border-gray-300 rounded-lg w-full px-3 md:px-4 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-[#B4F461]" />
-              <a id="btn-add-money1" class="btn w-full btn-ghost text-base md:text-xl font-bold bg-[#B4F461] rounded-lg py-2 md:py-3 hover:bg-[#a3e651] transition">Donate Now</a>
+              <label id="btn-add-money1" for="my_modal_6" class="btn w-full btn-ghost text-base md:text-xl font-bold bg-[#B4F461] rounded-lg py-2 md:py-3 hover:bg-[#a3e651] transition">Donate Now</label>
             </div>
           </div>
           <!-- Card-2 -->
@@ -104,11 +104,27 @@
             </div>
           </div>
         </div>
+
+        <!-- The button to open modal -->
+<label for="my_modal_6" class="btn">open modal</label>
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal" role="dialog">
+  <div class="modal-box flex flex-col items-center justify-center rounded-3xl">
+    <h1 class="text-lg font-bold">Congrates!</h1>
+    <span><img src="/assets/coin.png" alt=""></span>
+    <p class="py-4">You've donated for humankind</p>
+    <h3 class="text-lg font-bold">Successfully</h3>
+    <div class="modal-action">
+      <label for="my_modal_6" class="btn bg-gray-200">Close!</label>
+    </div>
+  </div>
+</div>
       </div>
 
       <div id="history-page" class="mt-8 hidden">
         <div id="history-list" class="flex flex-col gap-5 px-2 md:px-8">
-          <!-- History items will be added here -->
         </div>
       </div>
     </main>
